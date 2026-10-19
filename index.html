@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi&amp;Bee Studio · 自托管软件与开源硬件的蜂巢</title>
+<meta name="description" content="Mi&Bee Studio —— 自托管 NVR、设备管理与监控、开发板固件与双语文档。单二进制部署、零外部依赖、开箱即用。">
+<meta name="theme-color" content="#0c0d11">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mi&amp;Bee Studio">
+<meta property="og:description" content="自托管软件 × 开源硬件，酿进同一座蜂巢。">
+<meta property="og:url" content="https://mi-bee-studio.github.io/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Mi&Bee Studio 首页">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <polygon class="hex" points="32,3 58,17.5 58,46.5 32,61 6,46.5 6,17.5"/>
+        <path class="stripe" d="M22 23 L45 36"/>
+        <path class="stripe" d="M20 31 L36 40"/>
+        <path class="stripe" d="M22 39 L30 43.5"/>
+      </svg>
+      <span class="brand-name">Mi&amp;Bee <em>Studio</em></span>
+    </a>
+    <nav class="nav-links" aria-label="站内导航">
+      <a href="#projects">软件产品</a>
+      <a href="#camera">相机固件</a>
+      <a href="#boards">开发板</a>
+      <a href="#about">关于</a>
+    </nav>
+    <a class="btn btn-outline btn-sm" href="https://github.com/Mi-Bee-Studio" target="_blank" rel="noopener">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+      GitHub
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ Hero ============ -->
+<section class="hero">
+  <div class="hero-deco" aria-hidden="true">
+    <svg class="hex-lg" viewBox="0 0 100 174"><polygon points="50,2 98,29 98,87 50,114 2,87 2,29"/></svg>
+    <svg class="hex-md" viewBox="0 0 100 174"><polygon points="50,2 98,29 98,87 50,114 2,87 2,29"/></svg>
+    <svg class="hex-sm" viewBox="0 0 100 174"><polygon points="50,2 98,29 98,87 50,114 2,87 2,29"/></svg>
+  </div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow">github.com/Mi-Bee-Studio</p>
+    <h1>自托管软件 <span class="x">×</span> 开源硬件<br>酿进同一座<span class="accent">蜂巢</span></h1>
+    <p class="lead">
+      Mi&amp;Bee Studio 是一支专注<b>自托管基础设施、视频监控、物联网与开发板固件</b>的工程团队。
+      每个项目遵循同一条原则：<b>单二进制部署、零外部依赖、双语文档、开箱即用</b>。
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-solid" href="#projects">浏览开源项目</a>
+      <a class="btn btn-ghost" href="https://tools.mickeybee.cn" target="_blank" rel="noopener">固件选型中心 tools.mickeybee.cn ↗</a>
+    </div>
+  </div>
+  <div class="wrap stats">
+    <div class="stat"><b>17</b><span>公开仓库</span></div>
+    <div class="stat"><b>12</b><span>开发板 / 相机固件</span></div>
+    <div class="stat"><b>4</b><span>条产品线</span></div>
+    <div class="stat"><b class="stat-text">Go · Rust · C · Vue</b><span>全栈语言</span></div>
+  </div>
+</section>
+
+<!-- ============ 软件产品 ============ -->
+<section id="projects" class="section">
+  <div class="wrap">
+    <p class="eyebrow">Open Source Software</p>
+    <h2>软件产品</h2>
+    <p class="section-sub">服务器上的一条命令，浏览器里的一个界面 —— 不多，也不少。</p>
+    <div class="grid grid-2">
+
+      <article class="card card-feature">
+        <div class="card-head">
+          <h3>MiBeeNvr</h3>
+          <div class="tags"><span class="tag">Go</span><span class="tag">React</span><span class="tag tag-hot">⭐ 旗舰</span></div>
+        </div>
+        <p>轻量级自托管 NVR（网络视频录像机）。单个静态二进制、零依赖、内嵌 Web UI，低功耗 ARM 设备即可运行。</p>
+        <ul class="feats">
+          <li>RTSP / ONVIF / GB28181 / 小米 / WHIP 摄像头接入，RTMP / SRT 推流</li>
+          <li>WebRTC / HLS / FLV 直播与连续回放，音频与延时摄影</li>
+          <li>S3 冷存储卸载、浏览器端 AI 检测</li>
+        </ul>
+        <a class="card-link" href="https://github.com/Mi-Bee-Studio/MiBeeNvr" target="_blank" rel="noopener">github.com/Mi-Bee-Studio/MiBeeNvr ↗</a>
+      </article>
+
+      <article class="card card-feature">
+        <div class="card-head">
+          <h3>MiBeeSteward</h3>
+          <div class="tags"><span class="tag">Go</span><span class="tag">SvelteKit</span></div>
+        </div>
+        <p>设备管理与监控系统（CMDB-lite）。Go 后端（Chi + SQLite，CGO-free）内嵌 SvelteKit 5 SPA，单二进制部署。</p>
+        <ul class="feats">
+          <li>SNMP / ICMP / TCP / HTTP 探测，插件化 v2 网络扫描</li>
+          <li>分布式 Agent 架构：agent 扫描内网，中心统一登记</li>
+          <li>心跳监测、资产台账、Prometheus 指标</li>
+        </ul>
+        <a class="card-link" href="https://github.com/Mi-Bee-Studio/MiBeeSteward" target="_blank" rel="noopener">github.com/Mi-Bee-Studio/MiBeeSteward ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>mibee-docs</h3>
+          <div class="tags"><span class="tag">Markdown</span><span class="tag">Mermaid</span></div>
+        </div>
+        <p>全组织文档中心：所有项目双语（中 / 英）手册的单一事实源，branch-per-team 治理，squash-only 合并。</p>
+        <a class="card-link" href="https://github.com/Mi-Bee-Studio/mibee-docs" target="_blank" rel="noopener">仓库 ↗</a>
+        <a class="card-link card-link-sub" href="https://www.mickeybee.cn/docs" target="_blank" rel="noopener">在线阅读 www.mickeybee.cn/docs ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>mibee-fingerprints-go</h3>
+          <div class="tags"><span class="tag">Go</span><span class="tag">YAML</span></div>
+        </div>
+        <p>MiBee 指纹库参考引擎：加载内嵌 YAML 规则（零配置），把采集到的证据分类为 ServiceIdentity，实现 MiBeeSteward 指纹规范。</p>
+        <a class="card-link" href="https://github.com/Mi-Bee-Studio/mibee-fingerprints-go" target="_blank" rel="noopener">github.com/Mi-Bee-Studio/mibee-fingerprints-go ↗</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 相机固件 ============ -->
+<section id="camera" class="section section-alt">
+  <div class="wrap">
+    <p class="eyebrow">MiBee Cam Family</p>
+    <h2>相机固件</h2>
+    <p class="section-sub">把每一块 ESP32 变成正经的 IP 摄像机：MJPEG / RTSP 流、ONVIF、移动侦测、Web OTA，Prometheus 指标。</p>
+    <div class="grid grid-2">
+
+      <article class="card">
+        <div class="card-head">
+          <h3 class="mono">esp32s3-n16r8</h3>
+          <div class="tags"><span class="tag">ESP32-S3</span><span class="tag tag-hot">主力</span></div>
+        </div>
+        <p>OV3660 300 万像素旗舰固件：MJPEG / RTSP（摘要认证）、ONVIF、人脸 / 移动 / 二维码 AI 检测并叠加实时画面、中英双语 Web UI。</p>
+        <a class="card-link" href="https://github.com/Mi-Bee-Studio/esp32s3-n16r8" target="_blank" rel="noopener">仓库 ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3 class="mono">seeed-esp32s3-cam</h3>
+          <div class="tags"><span class="tag">XIAO ESP32-S3</span></div>
+        </div>
+        <p>OV2640 / OV5640：MJPEG + RTSP 带 G.711 音频（摘要认证）、AVI 分段录像、NAS 自动上传（WebDAV / HTTP）、动态延时摄影。</p>
+        <a class="card-link" href="https://github.com/Mi-Bee-Studio/seeed-esp32s3-cam" target="_blank" rel="noopener">仓库 ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3 class="mono">ai-thinker-esp32-cam</h3>
+          <div class="tags"><span class="tag">AI-Thinker</span></div>
+        </div>
+        <p>经典 OV2640 板卡：MJPEG 流、移动侦测、SD 时光流逝与连拍、ONVIF、双 WiFi 故障切换、文件管理器、Web OTA。</p>
+        <a class="card-link" href="https://github.com/Mi-Bee-Studio/ai-thinker-esp32-cam" target="_blank" rel="noopener">仓库 ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3 class="mono">luatos-esp32s3-a10-camera</h3>
+          <div class="tags"><span class="tag">Luatos S3</span></div>
+        </div>
+        <p>无 PSRAM 单片方案（OV2640）：MJPEG 流、移动侦测、ONVIF、WebSocket 事件推送、Webhook 告警、AT 指令。</p>
+        <a class="card-link" href="https://github.com/Mi-Bee-Studio/luatos-esp32s3-a10-camera" target="_blank" rel="noopener">仓库 ↗</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 开发板 ============ -->
+<section id="boards" class="section">
+  <div class="wrap">
+    <p class="eyebrow">Board-as-Root Firmware</p>
+    <h2>开发板固件矩阵</h2>
+    <p class="section-sub">
+      一块板卡 = 一个仓库。每个仓库从 <code class="mono">blink</code> 基线开始，
+      统一内置 <b>Web OTA</b> 与 <b>TWDT 看门狗</b>，CI 自动构建固件、附双语文档。
+    </p>
+    <div class="board-grid">
+      <a class="chip" href="https://github.com/Mi-Bee-Studio/esp32-s3-zero" target="_blank" rel="noopener">
+        <span class="chip-name">esp32-s3-zero</span>
+        <span class="chip-sub">ESP32-S3 · WiFi 配网 + 双槽 OTA</span>
+      </a>
+      <a class="chip" href="https://github.com/Mi-Bee-Studio/esp32-c3-mini" target="_blank" rel="noopener">
+        <span class="chip-name">esp32-c3-mini</span>
+        <span class="chip-sub">Lolin C3 Mini · 天气时钟</span>
+      </a>
+      <a class="chip" href="https://github.com/Mi-Bee-Studio/esp32-s2-mini" target="_blank" rel="noopener">
+        <span class="chip-name">esp32-s2-mini</span>
+        <span class="chip-sub">Wemos S2 Mini · 环境站 + WiFi CSI</span>
+      </a>
+      <a class="chip" href="https://github.com/Mi-Bee-Studio/luatos-esp32c3" target="_blank" rel="noopener">
+        <span class="chip-name">luatos-esp32c3</span>
+        <span class="chip-sub">CORE 板 · 网络黑匣子</span>
+      </a>
+      <a class="chip" href="https://github.com/Mi-Bee-Studio/seeed-xiao-esp32c5" target="_blank" rel="noopener">
+        <span class="chip-name">seeed-xiao-esp32c5</span>
+        <span class="chip-sub">双频 Wi-Fi 6</span>
+      </a>
+      <a class="chip" href="https://github.com/Mi-Bee-Studio/seeed-xiao-esp32c6" target="_blank" rel="noopener">
+        <span class="chip-name">seeed-xiao-esp32c6</span>
+        <span class="chip-sub">Wi-Fi 6 + BLE 5 + 802.15.4</span>
+      </a>
+      <a class="chip" href="https://github.com/Mi-Bee-Studio/rp2040-zero" target="_blank" rel="noopener">
+        <span class="chip-name">rp2040-zero</span>
+        <span class="chip-sub">Pico-SDK · OLED 环境站</span>
+      </a>
+      <a class="chip" href="https://github.com/Mi-Bee-Studio/seeed-xiao-rp2350" target="_blank" rel="noopener">
+        <span class="chip-name">seeed-xiao-rp2350</span>
+        <span class="chip-sub">无射频 · UF2 / BOOTSEL 升级</span>
+      </a>
+    </div>
+    <p class="boards-note">
+      不知道从哪块板开始？到 <a href="https://tools.mickeybee.cn" target="_blank" rel="noopener">固件选型中心 tools.mickeybee.cn</a>，
+      25 品牌 125 款开发板、430 款模块手册，还有协议库代码生成器。
+    </p>
+  </div>
+</section>
+
+<!-- ============ 关于 ============ -->
+<section id="about" class="section section-alt">
+  <div class="wrap about-grid">
+    <div>
+      <p class="eyebrow">About the Hive</p>
+      <h2>关于蜂巢</h2>
+      <blockquote>「技术赋能生活，专业成就无忧」<br><span>Technology empowers life; professionalism brings peace of mind.</span></blockquote>
+      <p>
+        <b>Mi</b> 取自创始人网名 <b>Mickeyzzc</b>，<b>Bee</b> 来自他的爱人 —— 两只蜜蜂把家安在了代码里。
+        我们以全栈工程能力解决实际问题：软件开发、AI 应用、物联网、云原生、可观测性与系统集成。
+      </p>
+      <p>
+        除了公开仓库，蜂巢里还有一批私有维护的产品：运维工具链供应链中枢 <b>MiBeeHive</b>、
+        统一远程管理平台 <b>MiBeeReach</b>、边缘运维 Agent <b>Kite</b> 与统一设备交互协议 <b>MDP</b>。
+      </p>
+      <div class="cap-pills">
+        <span>软件开发</span><span>AI 应用</span><span>物联网</span><span>云原生</span>
+        <span>可观测性</span><span>系统集成</span><span>嵌入式</span>
+      </div>
+    </div>
+    <div class="about-side">
+      <div class="contact-card">
+        <h3>联系方式</h3>
+        <ul class="contact-list">
+          <li><span>官网</span><a href="https://www.mickeybee.cn" target="_blank" rel="noopener">www.mickeybee.cn ↗</a></li>
+          <li><span>文档中心</span><a href="https://www.mickeybee.cn/docs" target="_blank" rel="noopener">www.mickeybee.cn/docs ↗</a></li>
+          <li><span>工具站</span><a href="https://tools.mickeybee.cn" target="_blank" rel="noopener">tools.mickeybee.cn ↗</a></li>
+          <li><span>GitHub</span><a href="https://github.com/Mi-Bee-Studio" target="_blank" rel="noopener">github.com/Mi-Bee-Studio ↗</a></li>
+          <li><span>邮箱</span><a href="mailto:mickey_zzc@mickeybee.cn">mickey_zzc@mickeybee.cn</a></li>
+        </ul>
+      </div>
+      <div class="bee-note">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <polygon class="hex" points="32,3 58,17.5 58,46.5 32,61 6,46.5 6,17.5"/>
+          <path class="stripe" d="M22 23 L45 36"/>
+          <path class="stripe" d="M20 31 L36 40"/>
+          <path class="stripe" d="M22 39 L30 43.5"/>
+        </svg>
+        <p>觉得项目有用？去仓库点个 <b>Star</b> 🐝 —— 对蜜蜂最好的鼓励。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year">2026</span> Mi&amp;Bee Studio · Mi-Bee-Studio GitHub Organization</span>
+    <span class="footer-dim">本站为纯静态 HTML，由 GitHub Pages 发布，无任何构建链。</span>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
