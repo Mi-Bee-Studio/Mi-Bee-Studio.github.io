@@ -433,6 +433,12 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   font-size: 13px;
   color: var(--faint);
 }
+.matrix-views {
+  display: grid;
+  gap: 18px;
+  margin-top: 36px;
+}
+.matrix-views h3 { margin: 0; }
 
 /* ============ About ============ */
 
