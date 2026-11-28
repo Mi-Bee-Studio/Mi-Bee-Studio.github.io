@@ -57,14 +57,15 @@
       每个项目遵循同一条原则：<b>单二进制部署、零外部依赖、双语文档、开箱即用</b>。
     </p>
     <div class="hero-actions">
-      <a class="btn btn-solid" href="#projects">浏览开源项目</a>
+      <a class="btn btn-solid" href="https://github.com/mickeyzzc/releases" target="_blank" rel="noopener">发布会 · 下载软件 ↗</a>
+      <a class="btn btn-ghost" href="#projects">浏览全部产品</a>
       <a class="btn btn-ghost" href="https://tools.mickeybee.cn" target="_blank" rel="noopener">固件选型中心 tools.mickeybee.cn ↗</a>
     </div>
   </div>
   <div class="wrap stats">
-    <div class="stat"><b>17</b><span>公开仓库</span></div>
+    <div class="stat"><b>18</b><span>公开仓库 · GitHub API</span></div>
     <div class="stat"><b>12</b><span>开发板 / 相机固件</span></div>
-    <div class="stat"><b>4</b><span>条产品线</span></div>
+    <div class="stat"><b>4</b><span>软件产品线</span></div>
     <div class="stat"><b class="stat-text">Go · Rust · C · Vue</b><span>全栈语言</span></div>
   </div>
 </section>
@@ -79,11 +80,11 @@
       <code class="mono">go.mod</code> / <code class="mono">Cargo.toml</code> 逐条核实；
       闭源产品 MiBeeBell / MiBeeReach / MiBeeHive / MiBeeVision 以虚线绿框标出，Bell / Reach / Vision 的二进制经
       <a href="https://github.com/mickeyzzc/releases" target="_blank" rel="noopener">mickeyzzc/releases</a> 发布。
-      与主线无关的仓库按领域拆成下方三张专题图。
+      与主线无关的仓库按领域拆成下方三张专题图；图中“16 个公开仓库”仅为核心视图的收录数。
     </p>
     <figure class="matrix-fig">
       <a href="https://github.com/Mi-Bee-Studio" target="_blank" rel="noopener" aria-label="前往 GitHub 组织主页查看仓库">
-        <img src="assets/product-matrix.svg" alt="Mi&Bee Studio 产品矩阵 · 核心主线：终端设备、协议库、平台服务，16 个公开仓库与 18 条已核实关系边，含闭源产品 MiBeeBell、MiBeeReach、MiBeeHive 与 MiBeeVision" width="980" height="660">
+        <img src="assets/product-matrix.svg" alt="Mi&Bee Studio 产品矩阵 · 核心主线：终端设备、协议库、平台服务，收录 16 个公开仓库与 18 条已核实关系边，含闭源产品 MiBeeBell、MiBeeReach、MiBeeHive 与 MiBeeVision" width="980" height="660">
       </a>
     </figure>
     <p class="matrix-note">图里的光点会动 —— 与 GitHub 组织首页同款 ═▶ RTSP · ONVIF · GB28181 取流 · events 告警事件</p>
@@ -111,9 +112,9 @@
 <!-- ============ 软件产品 ============ -->
 <section id="projects" class="section">
   <div class="wrap">
-    <p class="eyebrow">Open Source Software</p>
-    <h2>软件产品</h2>
-    <p class="section-sub">服务器上的一条命令，浏览器里的一个界面 —— 不多，也不少。</p>
+    <p class="eyebrow">Self-Hosted Software</p>
+    <h2>软件产品与下载</h2>
+    <p class="section-sub">自托管软件，从文档到下载一站直达。版本与许可证按当前公开发布口径标注。</p>
     <div class="grid grid-2">
 
       <article class="card card-feature">
@@ -127,7 +128,13 @@
           <li>WebRTC / HLS / FLV 直播与连续回放，音频与延时摄影</li>
           <li>S3 冷存储卸载、浏览器端 AI 检测</li>
         </ul>
-        <a class="card-link" href="https://github.com/Mi-Bee-Studio/MiBeeNvr" target="_blank" rel="noopener">github.com/Mi-Bee-Studio/MiBeeNvr ↗</a>
+        <dl class="product-meta">
+          <div><dt>当前版本</dt><dd>v0.15.0</dd></div>
+          <div><dt>发布日期</dt><dd><time datetime="2026-11-14">2026-11-14</time></dd></div>
+          <div><dt>许可证</dt><dd>AGPL-3.0；v0.10.1 及更早版本为 MIT</dd></div>
+        </dl>
+        <a class="card-link" href="https://github.com/Mi-Bee-Studio/MiBeeNvr" target="_blank" rel="noopener">源代码与文档 ↗</a>
+        <a class="card-link card-link-sub" href="https://github.com/Mi-Bee-Studio/MiBeeNvr/releases" target="_blank" rel="noopener">GitHub Releases 下载 ↗</a>
       </article>
 
       <article class="card card-feature">
@@ -141,7 +148,92 @@
           <li>分布式 Agent 架构：agent 扫描内网，中心统一登记</li>
           <li>心跳监测、资产台账、Prometheus 指标</li>
         </ul>
-        <a class="card-link" href="https://github.com/Mi-Bee-Studio/MiBeeSteward" target="_blank" rel="noopener">github.com/Mi-Bee-Studio/MiBeeSteward ↗</a>
+        <dl class="product-meta">
+          <div><dt>当前版本</dt><dd>v0.10.0</dd></div>
+          <div><dt>发布日期</dt><dd><time datetime="2026-11-24">2026-11-24</time></dd></div>
+          <div><dt>许可证</dt><dd>AGPL-3.0 + 商业双授权</dd></div>
+        </dl>
+        <a class="card-link" href="https://github.com/Mi-Bee-Studio/MiBeeSteward" target="_blank" rel="noopener">源代码与文档 ↗</a>
+        <a class="card-link card-link-sub" href="https://github.com/Mi-Bee-Studio/MiBeeSteward/releases" target="_blank" rel="noopener">GitHub Releases 下载 ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>MiBeeBell <span class="product-private">🔒 源码私有</span></h3>
+          <div class="tags"><span class="tag">Go</span><span class="tag tag-hot">告警中心</span></div>
+        </div>
+        <p>轻量自托管告警通知中心。事件摄取、去抖、冷却、升级、静默与多渠道投递共用一条管道，支持 mesh 高可用。</p>
+        <ul class="feats">
+          <li>七类事件入口，兼容 Alertmanager / Bark / MQTT</li>
+          <li>国内外通知渠道、按人订阅与多站点联邦</li>
+          <li>CGO-free 单二进制，内嵌双语 Web UI 与 SQLite</li>
+        </ul>
+        <dl class="product-meta">
+          <div><dt>当前版本</dt><dd>v0.2.0</dd></div>
+          <div><dt>发布日期</dt><dd><time datetime="2026-11-11">2026-11-11</time></dd></div>
+          <div><dt>许可证</dt><dd>待公布</dd></div>
+        </dl>
+        <a class="card-link" href="https://github.com/mickeyzzc/releases/tree/main/products/mibeebell" target="_blank" rel="noopener">产品介绍 ↗</a>
+        <a class="card-link card-link-sub" href="https://github.com/mickeyzzc/releases/releases/tag/mibeebell-v0.2.0" target="_blank" rel="noopener">发布会下载 v0.2.0 ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>MiBeeReach <span class="product-private">🔒 源码私有</span></h3>
+          <div class="tags"><span class="tag">Rust</span><span class="tag">远程接入</span></div>
+        </div>
+        <p>自部署、隐私可控的统一远程接入平台。远程桌面、终端、SSH 与内网隧道共享连接层和设备身份。</p>
+        <ul class="feats">
+          <li>局域网发现、设备配对与加密连接</li>
+          <li>会话级控制、剪贴板与文件权限</li>
+          <li>Windows x64 主控 / 被控 / 控制台；Linux 被控；macOS arm64 主控</li>
+        </ul>
+        <dl class="product-meta">
+          <div><dt>当前版本</dt><dd>v0.1.0</dd></div>
+          <div><dt>发布日期</dt><dd><time datetime="2026-11-04">2026-11-04</time></dd></div>
+          <div><dt>许可证</dt><dd>Proprietary（专有软件）</dd></div>
+        </dl>
+        <a class="card-link" href="https://github.com/mickeyzzc/releases/tree/main/products/mibeereach" target="_blank" rel="noopener">产品介绍 ↗</a>
+        <a class="card-link card-link-sub" href="https://github.com/mickeyzzc/releases/releases/tag/mibeereach-v0.1.0" target="_blank" rel="noopener">发布会下载 v0.1.0 ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>MiBeeVision Lite <span class="product-private">🔒 源码私有</span></h3>
+          <div class="tags"><span class="tag">Rust</span><span class="tag">视频 AI</span></div>
+        </div>
+        <p>MiBeeNvr 的服务端视频 AI 引擎。对录像逐段进行目标检测、多目标跟踪与区域规则判定，并把事件和快照回写 NVR。</p>
+        <ul class="feats">
+          <li>内置 YOLOv8n + ONNX Runtime CPU 推理</li>
+          <li>ByteTrack 跟踪，区域入侵 / 越界 / 徘徊规则</li>
+          <li>图形化配置页，事件与带框快照回写 NVR</li>
+        </ul>
+        <dl class="product-meta">
+          <div><dt>当前版本</dt><dd>Lite v0.1.0</dd></div>
+          <div><dt>发布日期</dt><dd><time datetime="2026-11-06">2026-11-06</time></dd></div>
+          <div><dt>许可证</dt><dd>专有软件 + 内置模型 AGPL-3.0</dd></div>
+        </dl>
+        <a class="card-link" href="https://github.com/mickeyzzc/releases/tree/main/products/mibee-vision" target="_blank" rel="noopener">产品介绍 ↗</a>
+        <a class="card-link card-link-sub" href="https://github.com/mickeyzzc/releases/releases/tag/mibee-vision-v0.1.0" target="_blank" rel="noopener">发布会下载 Lite v0.1.0 ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>MiBeeHive <span class="product-private">🔒 源码私有</span></h3>
+          <div class="tags"><span class="tag">Go</span><span class="tag">供应链中枢</span></div>
+        </div>
+        <p>面向自托管环境的运维工具链供应链中枢，统一管理软件、脚本、密钥与部署产物。</p>
+        <ul class="feats">
+          <li>Go / pip / WebDAV 软件源与容器管理</li>
+          <li>定时任务、备份与密钥管理</li>
+          <li>Prometheus 指标与内嵌 Web UI</li>
+        </ul>
+        <dl class="product-meta">
+          <div><dt>公开版本</dt><dd>暂无可下载版本</dd></div>
+          <div><dt>发布日期</dt><dd>—</dd></div>
+          <div><dt>许可证</dt><dd>未公开</dd></div>
+        </dl>
+        <a class="card-link" href="https://github.com/mickeyzzc/releases" target="_blank" rel="noopener">查看发布会 · 当前未上架 Hive ↗</a>
       </article>
 
       <article class="card">
@@ -260,7 +352,7 @@
     </div>
     <p class="boards-note">
       不知道从哪块板开始？到 <a href="https://tools.mickeybee.cn" target="_blank" rel="noopener">固件选型中心 tools.mickeybee.cn</a>，
-      25 品牌 125 款开发板、430 款模块手册，还有协议库代码生成器。
+      查看开发板与模块手册，并使用协议库代码生成器。
     </p>
   </div>
 </section>
@@ -280,7 +372,7 @@
         除了公开仓库，蜂巢里还有一批私有维护的产品：运维工具链供应链中枢 <b>MiBeeHive</b>、
         统一远程管理平台 <b>MiBeeReach</b>、视频 AI 引擎 <b>MiBeeVision</b>、边缘运维 Agent <b>Kite</b> 与统一设备交互协议 <b>MDP</b>。
         其中告警通知中心 <b>MiBeeBell</b>、<b>MiBeeReach</b> 与 <b>MiBeeVision</b> 的功能介绍与二进制已在
-        <a href="https://github.com/mickeyzzc/releases" target="_blank" rel="noopener">mickeyzzc/releases</a> 发布。
+        <a href="https://github.com/mickeyzzc/releases" target="_blank" rel="noopener">mickeyzzc/releases</a> 发布；<b>MiBeeHive</b> 暂无可下载版本。
       </p>
       <div class="cap-pills">
         <span>软件开发</span><span>AI 应用</span><span>物联网</span><span>云原生</span>
