@@ -534,7 +534,7 @@ blockquote span {
   word-break: break-all;
 }
 
-.bee-note {
+.star-note {
   display: flex;
   gap: 14px;
   align-items: center;
@@ -543,11 +543,15 @@ blockquote span {
   border-radius: var(--radius);
   background: rgba(246, 183, 60, 0.05);
 }
-.bee-note svg { width: 40px; height: 40px; flex: none; }
-.bee-note .hex { stroke-width: 3; }
-.bee-note .stripe { stroke-width: 3.5; }
-.bee-note p { margin: 0; font-size: 13.5px; color: var(--muted); }
-.bee-note b { color: var(--honey-bright); }
+.star-note svg { width: 40px; height: 40px; flex: none; }
+.star-note .star {
+  fill: none;
+  stroke: var(--honey-bright);
+  stroke-width: 3.5;
+  stroke-linejoin: round;
+}
+.star-note p { margin: 0; font-size: 13.5px; color: var(--muted); }
+.star-note b { color: var(--honey-bright); }
 
 /* ============ Footer ============ */
 
